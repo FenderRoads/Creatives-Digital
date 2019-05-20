@@ -1,0 +1,519 @@
+@import "_fonts.sass"
+@import "_vars.sass"
+@import "_libs.sass"
+
+*
+	padding: 0
+	margin: 0
+.h1, .h2, .h3, .h4, .h5, .h6
+	text-transform: uppercase
+	line-height: 1.4
+.h2
+	font-family: 'GothamPro ex', sans-serif
+.button-style
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $accent
+	padding: 15px 45px
+	font-size: 14px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($accent, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .32		
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	padding: 0
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
+body
+	font-size: 16px
+	min-width: 320px
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+li
+	list-style: none
+a
+	color: #fff
+	text-decoration: none
+textarea, input
+	outline: none
+textarea
+	resize: none
+.t-center
+	text-align: center
+.header
+	min-height: 800px
+	height: 100vh
+	background: $dark
+	color: #fff
+	position: relative
+
+.logo
+	margin-top: 23px
+	
+.my-menu
+	margin-top: 53px
+	font-family: 'MyriadPro ex', sans-serif
+	font-size: 18px
+	font-weight: 400
+	ul
+		li
+			display: inline-block
+			a
+				padding: 35px 16px
+				color: #fff
+				text-decoration: none
+				box-sizing: border-box
+				&:hover
+					border-bottom: 3px solid $blue
+					transition: border-bottom .1s ease
+.soc-icons
+	display: inline-block
+	font-size: 20px
+	margin-top: 53px
+	.fab
+		color: #fff
+		cursor: pointer
+		padding: 0 8px
+		&:hover
+			opacity: .75
+			transition: opacity .5s ease
+.h1
+	font-family: 'GothamPro ex', sans-serif
+	font-size: 153px
+	margin-top: 200px
+	letter-spacing: -8px
+	text-align: center
+	height: 180px
+.power
+	font-family: 'GothamPro ex', sans-serif
+	font-weight: 500
+	letter-spacing: 18px
+	text-transform: uppercase
+	font-size: 25px
+	color: $accent
+	text-align: center
+	padding-left: 30px
+	
+button.hamburger
+	cursor: pointer
+	outline: none
+	display: none
+	position: absolute
+	right: 50px
+	top: 35px
+	.hamburger-inner
+		background: #fff
+		&:after, &:before
+			background: inherit
+
+.line
+	width: 100%
+	height: 2px
+	position: absolute
+	background: #888
+	top: 117px
+	opacity: .5
+.scroll
+	margin-top: 118px
+	.button
+		width: 65px
+		height: 65px
+		border-radius: 10em
+		background: transparent
+		border: 1px solid #fff
+		font-size: 20px
+		cursor: pointer
+		margin: 0 auto
+		position: relative
+		i.fas
+			position: absolute
+			top: 22.5px
+			left: 22.5px
+	.scroll-text
+		font-size: 13px
+		font-family: 'OpenSans ex'
+		font-weight: 400
+		text-align: center
+.m-we_are
+	background: #11749e
+	color: #fff
+	.w
+		text-transform: uppercase
+		position: absolute
+		font-family: "GothamBook ex", sans-serif
+		font-size: 257px
+		color: #3c8daf
+		font-weight: 600
+		left: 50%
+		margin-left: -147px
+	.agency
+		font-size: 35px
+		font-weight: 500
+		text-align: center
+		margin-top: 168px
+		margin-bottom: 143px
+		position: relative
+	.feature-head
+		font-size: 18px 
+	.f-text
+		font-size: 15px
+		line-height: 1.5
+	.feature
+		text-align: center
+	.round
+		width: 133px
+		height: 133px
+		border-radius: 10em
+		text-align: center
+		background: $lightblue
+		color: #fff
+		font-size: 25px
+		margin: 0 auto
+		margin-bottom: 10px
+		.fas
+			line-height: 132px
+.row-news
+	display: flex
+	.black
+		background: #000
+		width: 50%
+		height: 500px
+		color: #fff
+		font-size: 15px
+	.white
+		background: #f3f3f3
+		width: 50%
+		height: 500px
+		color: #000
+		font-size: 15px
+	.date
+		margin-top: 100px
+	.news-title
+		margin-bottom: 40px
+		margin-top: -15px
+	.img
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		width: 50%
+		height: 500px
+
+.blog-heading
+	background: #fff
+	color: #222
+	img
+		display: block
+		margin: 0 auto
+	.title-blog
+		position: relative
+		text-align: center
+		margin-top: 163px
+		.title
+			font-size: 33px
+			position: relative
+			margin-bottom: 115px
+	.post-title
+		text-align: center
+		font-size: 24px
+		font-family: "GothamBook ex", sans-serif
+		margin-bottom: 76px
+	.big-b
+		position: absolute
+		font-size: 247px
+		color: #d7d7d7
+		text-transform: uppercase
+		font-weight: bold
+		font-family: "RobotoCondensed ex", sans-serif
+		top: -200px
+		left: 50%
+		margin-left: -62px
+		height: 317px
+	.blog-title
+		font-size: 17px
+		color: $accent
+		font-weight: 600
+		text-transform: uppercase
+		text-align: center
+		margin-top: 44px
+		margin-bottom: 26px
+	.blog-text
+		text-align: center
+		font-size: 15px
+		font-family: "GothamBook ex", sans-serif
+		line-height: 1.5
+.quick-action
+	background: $accent
+	.fas
+		font-size: 70px
+		color: #fff
+		margin-top: 113px
+	.quick-text
+		font-size: 15px
+		font-family: "GothamBook ex", sans-serif
+		color: #fff
+		margin-top: 113px
+		margin-bottom: 110px
+
+.key-feature
+	background: #111
+	color: #fff
+	height: 850px
+	.key-iphoneSE
+		position: absolute
+		top: 100px
+		left: 50%
+		margin-left: 235px
+	.key-title-margin
+		margin-top: 224px
+		margin-bottom: 41px
+	.key-title
+		font-size: 25px
+	.key-text
+		font-size: 15px
+		line-height: 1.5
+		font-family: "GothamBook ex", sans-serif
+		margin-bottom: 68px
+	.r-first
+		background: $accent
+		width: 370px
+		padding:
+			left: 19px
+			top: 6px
+			bottom: 6px
+		margin-bottom: 20px
+
+	.r-second
+		background: $accent
+		width: 400px
+		padding:
+			left: 19px
+			top: 6px
+			bottom: 6px
+		margin-bottom: 20px
+	.r-third
+		background: $accent
+		width: 418px
+		padding:
+			left: 19px
+			top: 6px
+			bottom: 6px
+		margin-bottom: 20px
+
+.team
+	background: #fff
+	.team-title
+		font-size: 35px
+		font-weight: 500
+		text-align: center
+	.team-title-margin
+		margin-top: 130px
+		margin-bottom: 123px
+	.big-t
+		font-family: "RobotoCondensed ex", sans-serif
+		font-weight: bold
+		font-size: 230px
+		color: #d7d7d7
+		position: absolute
+		top: -53px
+		left: 50%
+		margin-left: -56px
+	.post-title
+		font-family: "GothamBook ex", sans-serif
+		font-size: 27px
+		font-weight: 400
+		text-align: center
+		margin-bottom: 69px
+	.team-img
+		position: relative
+		img
+			display: block
+			margin: 0 auto
+			
+	.team-block
+		width: 216px
+		height: 117px
+		position: absolute
+		background: #fff
+		bottom: -52px
+		left: 26px
+		text-align: center
+		text-transform: uppercase
+		.name
+			color: $accent
+			font-size: 20px
+			font-weight: 500
+			margin-top: 10px
+			margin-bottom: 0px
+		.proffesion
+			font-size: 15px
+			color: #000000
+			font-weight: bold
+	.item-4
+		margin-bottom: 120px
+
+.contact
+	color: #fff
+	background: #111
+	&-inputs
+		margin-bottom: 39px
+		input
+			color: #fff
+			width: 350px
+			border: 1px solid #ffffff
+			background: transparent
+			padding: 
+				top: 7px
+				bottom: 7px
+				left: 15px
+			&::placeholder
+				color: #fff
+	&-title
+		text-align: center
+		margin-top: 220px
+		margin-bottom: 150px
+		.title
+			font-size: 35px
+			font-weight: 500
+			text-transform: uppercase
+	&-message
+		textarea
+			width: 1110px
+			height: 150px
+			color: #fff
+			background: transparent
+			padding: 10px
+			border: 1px solid #fff
+			&::placeholder
+				color: #fff
+
+	.contact-button
+		text-align: center
+		margin-top: 30px
+		margin-bottom: 100px
+
+.map
+	background: #111
+	.container-fluid
+		
+
+.my-footer
+	background: #111
+	color: #fff
+	.rights
+		margin-top: 50px
+		margin-bottom: 70px
+	.by
+		margin-top: 45px
+		text-align: right
+
+.sidr
+	ul
+		li
+			a
+				color: #fff
+				font-family: "GothamBook ex", sans-serif
+				border-bottom: 1px solid #999
+				background: #111
+				transition: background .5s ease, color .5s ease, font-weight .25s ease
+				box-shadow: none !important
+				letter-spacing: 0
+				&:hover
+					background: #fff
+					color: #111
+					letter-spacing: 1px
+
+
+.top
+	position: fixed
+	bottom: 25px
+	right: -100px
+	background: #e0e0e0
+	z-index: 12
+	border-radius: 10em
+	color: #666666
+	font-size: 24px
+	width: 60px
+	height: 60px
+	text-align: center
+	line-height: 60px
+	cursor: pointer
+	transition: all .25s ease
+	opacity: .5
+	&:hover
+		color: #ffffff
+		background-color: $accent
+		opacity: .9
+	&.active
+		right: 25px
+// .pl-square .loader 
+// 	width: 50px
+// 	height: 50px
+// 	transform-origin: 50% 50%
+
+// @include animation(spinReturn 4s ease infinite)
+	
+// 	span 
+// 		position: absolute
+// 		top: 0
+// 		left: 0
+// 		display: block
+// 		width: 100%
+// 		height: 100%
+// 		border: 4px solid $primary-color
+// 		transform-origin: 50% 50%
+// @include transform(rotate(45deg))
+        
+      
+	
+      
+					
+
+
+
+		
+			
+
+
+
+
+
+.margin-auto
+	margin: auto
+.margin
+	margin-bottom: 110px
+@import "_media"
