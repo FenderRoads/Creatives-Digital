@@ -1,0 +1,396 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+  .h1
+    font-size: 125px
+    height: 145px
+  .power
+    font-size: 23px
+    letter-spacing: 13px
+  .my-menu
+    ul
+      li
+        display: inline-block
+        a
+          padding: 35px 11px
+          color: #fff
+          text-decoration: none
+          box-sizing: border-box
+  .soc-icons
+    .fab
+      padding: 0 5px
+  .m-we_are
+    .w
+      left: 50%
+      margin-left: -147px
+
+  .blog-heading
+    .big-b
+      left: 50%
+      margin-left: -62px
+
+  .quick-action
+    .fas
+      font-size: 60px
+      color: #fff
+    .quick-text
+      font-size: 14px
+
+  .key-feature
+    .key-iphoneSE
+      left: 50%
+      margin-left: 177px
+      img
+        width: 291px
+        height: 621px
+  
+  .team
+    .item-4
+      margin-top: 70px
+    .big-t
+      left: 50%
+      margin-left: -56px
+    .team-block
+      left: 47px
+
+  .contact
+    &-inputs
+      input
+        width: 292px
+    &-message
+      textarea
+        width: 930px
+
+        
+        
+		
+			
+// ≥992px
++media-breakpoint-down(md)
+  .h1
+    font-size: 105px
+    height: 125px
+    letter-spacing: -9px
+  .power
+    font-size: 21px
+    letter-spacing: 8px
+    text-align: center
+  .my-menu
+    text-align: center
+    ul
+      li
+        display: inline-block
+        a
+          padding: 35px 11px
+          color: #fff
+          text-decoration: none
+          box-sizing: border-box
+          &:hover
+            border-bottom: none
+            opacity: .75
+            transition: opacity .25s ease
+  .soc-icons
+    .fab
+      padding: 0 0px
+
+  .m-we_are
+    .f-text
+      font-size: 14px
+    .w
+      left: 50%
+      margin-left: -147px
+      margin-top: 0
+  
+  .row-news
+    flex-direction: column
+    .black
+      width: 100%
+      height: 500px
+    .white
+      background: #f3f3f3
+      width: 100%
+      height: 500px
+    .img
+      background-repeat: no-repeat
+      background-size: cover
+      width: 100%
+      height: 500px
+    .news-title, .date, .news-text
+      text-align: center
+    .order
+      order: 2
+
+  .blog-heading
+    .big-b
+      left: 50%
+      margin-left: -62px
+    .blog-text
+      margin-bottom: 30px
+    
+  .quick-action
+    .fas
+      font-size: 45px
+      color: #fff
+    .quick-text
+      font-size: 13px
+
+  .key-feature
+    .key-iphoneSE
+      left: 50%
+      margin-left: 87px
+      img
+        width: 261px
+        height: 591px
+    .key-text
+      font-size: 14px
+      margin-bottom: 40px
+    .r-first
+      width: 350px
+      margin-bottom: 15px
+    .r-second
+      width: 380px
+      margin-bottom: 15px
+    .r-third
+      width: 398px
+      margin-bottom: 15px
+
+  .team
+    .item-3
+      margin-top: 70px
+    .big-t
+      left: 50%
+      margin-left: -56px
+    .post-title
+      .title
+        font-size: 22px
+  
+  .contact
+    &-inputs
+      input
+        width: 211px
+    &-message
+      textarea
+        width: 690px
+      
+// ≥768px
++media-breakpoint-down(sm)
+  .soc-icons
+    display: none
+  .my-menu
+    display: none
+  .h1
+    font-size: 81px
+    height: 90px
+    letter-spacing: -9px
+  .power
+    font-size: 18px
+    letter-spacing: 3px
+    text-align: center
+  button.hamburger
+    display: block
+    margin-right: 
+  
+  .m-we_are
+    .agency
+      font-size: 30px
+      margin-bottom: 100px
+    .w
+      font-size: 220px
+      left: 50%
+      margin-left: -127px
+      margin-top: 20px
+
+  .blog-heading
+    .big-b
+      left: 50%
+      margin-left: -62px
+    .post-title
+      font-size: 21px
+    .blog-text
+      margin-bottom: 30px
+
+  .quick-action
+    .fas
+      font-size: 60px
+      color: #fff
+    .m-top
+      margin-top: 30px
+    .quick-text
+      font-size: 15px
+      margin-top: 20px
+      margin-bottom: 20px
+    .quick-text-last
+      margin-bottom: 110px
+  
+  .key-feature
+    height: 1450px
+    .key-iphoneSE
+      position: static
+      margin: auto
+      img
+        display: block
+        margin: auto
+        width: 320px
+        height: 651px
+    .key-title-margin
+      margin-top: 150px
+    .key-title
+      text-align: center
+    .key-text
+      font-size: 14px
+      margin-bottom: 40px
+      text-align: center
+    .r-first
+      text-align: center
+      width: 350px
+      padding-left: 0
+      margin-bottom: 15px
+    .r-second
+      text-align: center
+      width: 380px
+      padding-left: 0
+      margin-bottom: 15px
+    .r-third
+      text-align: center
+      width: 398px
+      padding-left: 0
+      margin-bottom: 100px  
+          
+    
+  .team
+    .item-1
+      margin-top: 70px
+    .item-2
+      margin-top: 70px
+    .item-3
+      margin-top: 70px
+    .item-4
+      margin-top: 70px
+    .big-t
+      left: 50%
+      margin-left: -56px
+    .team-block
+      bottom: -52px
+      left: 147px
+    .post-title
+      margin-bottom: 30px
+
+  .contact
+    &-inputs
+      input
+        width: 240px
+    &-message
+      textarea
+        width: 510px
+    #phone
+      width: 100%
+      margin-top: 39px
+
+// ≥576px
++media-breakpoint-down(xs)
+  button.hamburger
+    display: block
+    right: 6px
+  .h1
+    text-align: center
+    font-size: 50px
+    height: 60px
+    letter-spacing: -6px
+  .power
+    font-size: 16px
+    letter-spacing: -1px
+    text-align: center
+    padding-left: 7px
+  .m-we_are
+    .agency
+      font-size: 25px
+      margin-bottom: 100px
+    .w
+      font-size: 200px
+      left: 50%
+      margin-left: -113px
+  .blog-heading
+    .big-b
+      left: 50%
+      margin-left: -62px
+    .blog-text
+      margin-bottom: 30px
+
+  .key-feature
+    height: 1450px
+    .key-iphoneSE
+      position: static
+      margin-top: 50px
+      img
+        display: block
+        margin: auto
+        width: 280px
+        height: 611px
+    .key-title-margin
+      margin-top: 150px
+    .key-title
+      text-align: center
+    .key-text
+      font-size: 14px
+      margin-bottom: 40px
+      text-align: center
+    .r-first
+      text-align: center
+      width: 250px
+      margin-bottom: 15px
+    .r-second
+      text-align: center
+      width: 280px
+      margin-bottom: 15px
+    .r-third
+      text-align: center
+      width: 298px
+      margin-bottom: 15px
+
+  .team
+    .team-block
+      left: 50%
+      margin-left: -108px
+    .big-t 
+      left: 50%
+      margin-left: -56px
+
+  .contact
+    &-inputs 
+      input
+        width: 100%
+    &-message
+      textarea
+        width: 100%
+    #phone
+      width: 100%
+    #email
+      margin-top: 39px
+
+  .my-footer
+    .rights
+      text-align: center
+      margin-bottom: 10px
+    .by
+      text-align: center
+      margin-top: 0px
+      margin-bottom: 50px
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
